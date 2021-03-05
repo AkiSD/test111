@@ -1,0 +1,93 @@
+.news-page {
+    .hide-block {
+        display: none;
+    }
+    padding: 10px 0 50px;
+    &-block {
+            padding: 25px;
+            background: #fff;
+            transition: 1s;
+            margin-top: 40px;   
+            box-shadow: 0px 4px 20px 0px rgb(0 0 0 / 5%);     
+            cursor: pointer;
+            &:hover {
+                box-shadow: 0px 0px 25px 12px rgba(0,0,0,0.67);
+            }
+        img {
+            width: 420px;
+            height: 300px;
+            .lg-block({
+            margin: 0 auto;
+            });
+            .sm-block({
+                width: 100%;
+            });
+        }
+        &__flex {
+            display: flex;
+            .lg-block({
+                flex-direction: column;
+            });
+            &-2 {
+                margin-left: 20px;
+                .lg-block({
+                    text-align: center;
+                    margin-top: 30px;
+                });
+                &__title {
+                    font-size: 20px;
+                    font-weight: 700;
+                }
+                &__subtitle {
+                    margin-top: 30px;
+                    line-height: 21px;
+                }
+                &__foot {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: 106px;
+                    &__date {
+                        font-size: 18px;
+                        .fa {
+                            padding-right: 10px;
+                        }
+                    }
+                    &__podrobnee {
+                        font-size: 18px;
+                        color: rgb(18, 0, 122);
+                    }
+                }
+            }
+        }
+    }
+
+        &__navigation {
+            margin-top: 40px;
+            position: relative;
+            ul {
+                
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                :hover {
+                    background: rgb(146, 146, 146); 
+                }
+                li {
+                    margin-left: 10px;
+                    border-radius: 50%;
+                    border: 1px solid black;
+                    padding: 6px;
+                    
+                }
+            }
+            
+        }
+
+
+
+
+
+
+
+
+}

@@ -1,0 +1,107 @@
+.footer {
+    // .bg('../img/footer-bg.jpg');
+    background: rgb(30, 3, 150);
+    .container {
+        display: flex;
+        justify-content: center;
+    }
+    &__bg-black {
+        padding: 10px 0;
+    }   
+    
+    &-a {
+        display: inline-block;
+        text-decoration: none;
+        color: @font-color;
+        padding: 10px 0;
+        text-align: center;
+        img {
+            margin-left: 10px;
+        }
+        &__logo {
+            margin-top: 10px;
+            text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+            .lg-block({
+                margin: 0 auto;
+            });
+        }
+    }
+    // &-menu {
+    //     display: flex;
+    //     margin: 0 auto 77px;
+    //     justify-content: space-between;
+    //     width: 100%;
+    //     .xl-block({
+    //         text-align: center;
+    //     });
+    //     .lg-block({
+    //         flex-direction: column;
+    //         position: absolute;
+    //         left: 0;
+    //         top: 0;
+    //         text-align: left;
+    //         margin: 0;
+    //         background: rgb(34, 67, 158);
+    //         width: 300px;
+    //         padding: 60px 0;
+    //         border-radius: 0 0 6px 0;
+    //         opacity: 0;
+    //     });
+    //     &__li {
+    //         list-style: none;         
+    //            .lg-block({
+    //                 margin: 30px 0 0 50px;
+    //             });
+            
+    //         a {
+    //             text-decoration: none;
+    //             color: @font-color;
+    //             font-size: 20px;
+    //             &:hover {
+    //                 color: red;
+    //             }
+    //         }
+    //     }
+    // }
+    &-info {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        padding: 30px 0;
+        margin: 0 auto;
+        .xl-block({
+            flex-wrap: wrap;
+            justify-content: center;
+        });
+        .md-block({
+            flex-direction: column;
+        });
+        &__li {
+            
+
+            &:not(:first-child) {
+                margin-left: 50px;
+                .md-block({
+                    margin: 0;
+                    text-align: center;
+                    margin-top: 10px;
+                });
+            }
+            
+            a {
+                color: @font-color;
+                text-decoration: none;
+                font-size: 18px;
+                .fa {
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+    &__who {
+        font-size: 18px;
+        color: #fff;
+        text-align: center;
+        margin-top: 10px;
+    }
+}

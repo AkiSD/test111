@@ -1,0 +1,93 @@
+*{
+    margin    : 0;
+    padding   : 0;
+    box-sizing: border-box;
+}
+
+
+
+
+h5 {
+        text-align: center;
+        font-weight: 700;
+        font-size: 32px;
+        margin-top: 50px;
+}
+
+
+body {
+    font-family: 'Roboto';
+    font-weight: normal;
+    font-style: normal;
+    background: url('/img/news-bg.png');
+}
+
+
+
+.container {
+    margin: 0 200px;
+    .xl1636(margin, 0 80px);
+    .xl1436(margin, 0 50px);
+    .xl1356(margin, 0 30px);
+    .xl1266(margin, 0 10px);
+    .xl(margin, 0 40px);
+    .lg(margin, 0 10px);
+}
+
+
+.circle-up {
+    width: 80px;
+    height: 80px;
+    background: rgb(1, 14, 128);
+    position: fixed;
+    left: 92%;
+    top: 90%;
+    border-radius: 50%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    cursor: pointer;
+    opacity: 0;
+    transition: 1s;
+    &:hover {
+        background: rgb(182, 5, 5);
+    }
+    .md-block({
+        width: 40px;
+        height: 40px;
+        left: 85%;
+        .fa {
+            font-size: 15px;
+        }
+    });
+}
+
+
+
+
+/// ГЛАВНАЯ СТРАНИЦА ///
+
+@import './params/var.less';
+@import './params/mix.less';
+@import './index/header.less';
+@import './index/header-page.less';
+@import './index/news.less';
+@import './index/sudi.less';
+@import './index/sayti.less';
+@import './index/footer.less';
+
+/// НОВОСТИ ///
+
+@import './news/news.less';
+
+
+/// РАЙОНЫ ///
+
+@import './area/area.less';
+
+
+///Ревквизиты ///
+
+@import './rekvizit/rekvizit.less';

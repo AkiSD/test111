@@ -1,0 +1,40 @@
+.sayti {
+    padding: 70px 0 100px;
+    &__title {
+        font-size: 28px;
+        text-align: center;
+    }
+    &-blocks {
+        display: flex;
+        justify-content: center;
+        margin: 20px auto 0;
+            &__block {
+            background: #fff;
+            width: 100%;
+            padding: 0 10px;
+            height: 120px;
+            .lg-block({
+                height: 180px;
+            });
+            font-size: 20px;
+            text-align: center;
+            box-shadow: 3px 14px 18px 2px rgba(0,0,0,0.37);
+            transition: 1s;
+            display: flex;
+            align-items: center;
+            .fa {
+                margin-right: 15px;
+                font-size: 26px;
+                margin-top: 2px;
+            }
+            &:hover {
+                background: rgb(78, 78, 78);
+                color: #fff;
+            }
+            cursor: pointer;
+            &:not(:first-child) {
+                margin-left: 50px;
+            }
+        }
+    }
+}
